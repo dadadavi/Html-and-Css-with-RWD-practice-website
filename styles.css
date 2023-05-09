@@ -144,6 +144,7 @@ input{
     height:80vh;
     object-fit: cover;
     margin:-80px 0px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .introduction .text{
@@ -161,7 +162,7 @@ input{
     text-orientation: mixed;
     display: inline-block;
     color:#8DA291;
-    height:100%;
+    height:50%;
 
 }
 
@@ -188,6 +189,7 @@ input{
 @media screen and (max-width:740px){
     .navbar{
         font-size:0.9rem;
+        padding:0 10px;
     }
 
     .navbar a{
@@ -199,7 +201,7 @@ input{
 
     }
 
-    .introduction text{
+    .introduction .text{
         height:80%;
     }
 
@@ -224,6 +226,99 @@ input{
     }
 
 
+
+}
+
+
+.fix3{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width:650px){
+
+    .fix3{
+        display:flex !important;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .introduction{
+        display:block;
+        height:100%;
+        padding-top:10px;
+        padding-bottom:10px;
+        margin:50px 0px;
+    }
+
+    .introduction img{
+        display:block;
+        padding:0px;
+        margin:0px;
+        width:100%;
+        height:50vw;
+    }
+
+    .introduction .text{
+        display:flex;
+        padding:0px;
+        margin:0px;
+    }
+
+    .introduction .text p{
+        padding:0px;
+        margin:0px;
+        line-height:35px;
+        height:50%;
+    }
+
+    .introduction .heading{
+        padding:0px;
+        margin:0px;
+    }
+
+    .introduction .heading h1{
+        padding:0px;
+        margin:0px;
+        margin-bottom:0px !important; 
+    }
+
+    .heading2{
+        margin-top:100px;
+    }
+
+    .footer_right h1{
+        font-size:1.1rem;
+    }
+}
+
+@media screen and (max-width:460px) {
+    
+    .navbar a{
+        padding:6px;
+    }
+    
+    .navbar img{
+        margin-right:0px;
+    }
+
+    .navbar_logotext{
+        padding:0px;
+    }
+
+    .introduction .text p{
+        line-height:26px;
+    }
+
+    .introduction .heading h1{
+        font-size: 24px;
+    }
+    
+    .featurebox{
+        font-size: 0.8rem;
+    }
 }
 
 .introduction .heading h1{
@@ -284,7 +379,7 @@ input{
 @media screen and (max-width:850px){
     .box{
         flex-direction: column;
-        height:280vh;
+        height:210vh;
     }
     .box1{
         width:100%;}
@@ -312,8 +407,8 @@ input{
 
 .heartbutton{
     position:absolute;
-    top:0px;
-    right:15px;
+    top:15px;
+    right:25px;
     font-size:1.5rem;
     color:white;
 }
@@ -347,6 +442,11 @@ input{
     padding:10px 15px;
     background-color:whitesmoke;
     color:#014421;
+}
+
+.cart:hover{
+    background-color:var(--green-middle);
+    color:white;
 }
 
 /*subscribe section*/
@@ -417,6 +517,32 @@ input{
     margin-left:5px;
 }
 
+@media screen and (max-width:740px){
+    .subscribe{
+        flex-direction: column;
+        width:100%;
+    }
+
+    .subscribe_rightbox{
+        width:100%;
+    }
+
+    .subscribe_rightbox i{
+        padding:12px;
+    }
+
+    .subscribe_leftimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom:10px;
+    }
+
+    .subscribe span{
+        padding-left: 5px;
+    }
+}
+
 /* footer section*/
 
 .footer{
@@ -472,6 +598,10 @@ input{
     padding:5px;
 }
 
+.footer_downbox p{
+    text-align: right;
+}
+
 @media screen and (max-width:850px){
 
     .subscribe{
@@ -480,5 +610,23 @@ input{
 
     .footer{
         padding:20px 30px;
+    }
+}
+
+@media screen and (max-width:650px){
+    .footer_downbox{
+        font-size: 0.7rem;
+    }
+
+    .footer_downbox div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .footer_downbox div i{
+        font-size:0.9rem;
+        padding:5px;
     }
 }

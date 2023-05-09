@@ -265,7 +265,6 @@ input{
         display:flex;
         padding:0px;
         margin:0px;
-        padding:15px 0px;
     }
 
     .introduction .text p{
@@ -287,7 +286,7 @@ input{
     }
 
     .heading2{
-        margin-top:100px;
+        margin-top:90px;
     }
 
     .footer_right h1{
@@ -310,14 +309,8 @@ input{
     }
 
     .introduction .text p{
-        line-height:1.8rem;
+        line-height:26px;
     }
-
-    .introduction img{
-        margin-top:10px;
-        margin-bottom:10px;
-    }
-
 
     .introduction .heading h1{
         font-size: 24px;
